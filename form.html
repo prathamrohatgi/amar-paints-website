@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Amar Paints Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:700" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    body{
+     font-family: 'Noto Sans', sans-serif;
+
+    }
+    form{
+        width:40%;
+        text-align:center;
+        position:absolute;
+        top:180px;
+        left:400px;
+        background-color:white;
+        padding:10px 0 0 0;
+        border-radius:10px;
+        
+    }
+    .formmain img{
+        position:relative;
+    }
+    input[type="text"],input[type="number"]{
+        width:90%;
+        padding:5px 0;
+        border-radius:7px;
+        box-shadow:2px 2px 2px;
+        margin-bottom:4px;
+    }
+    textarea{
+        width:90%;
+        border-radius:7px;
+        padding:10px 0 0 0;
+        box-shadow:3px 3px 3px;
+        margin-bottom:5px;
+    }
+    select{
+        width:90%;
+        padding:5px 0;
+        border-radius:7px;
+        box-shadow:2px 2px 2px;
+        background-color:#f1f1f1;
+    }
+    input[type="submit"],input[type="reset"]{
+        width:50%;
+        float:left;
+        padding:6px 0;
+    }
+    input[type="submit"]{
+        background-color:#df6786;
+        color:white;
+    }
+    input[type="reset"]{
+        background-color:#3d155f;
+        color:white;
+    }
+    h2{
+        font-family: 'Roboto', sans-serif;
+
+    }
+</style>
+<body>
+    <div class="formmain">
+     <img src="images/form.jpg" width="99%" height="600px">
+     <form>
+         <h2>Any Advice Or Problem Please Send Us Here</h2>
+         Full Name<br>
+         <input type="text" placeholder="Name..." required><br>
+         Your Phone Number<br>
+         <input type="number" placeholder="987...10digit" required><br>
+         Service Used<br>
+         <select name="Service-Used" size="1">
+         <option value="wood">Wood Coating Or Paint</option>
+         <option value="automobile">Automobile coating or paint</option>
+         <option value="Automobile-refinish">Automobile Refinish</option>
+         <option value="Industrial">Industrial Coating or Paint</option>
+         <option value="Marine">Marine Coating Or Paint</option>
+         </select><br>
+         Message/Feedback<br>
+         <textarea rows="4" cols="50"></textarea><br>
+         <input type="submit" name="submit" value="Submit">
+         <input type="reset" value="Reset">
+     </form>
+    </div>
+</body>
+</html>
